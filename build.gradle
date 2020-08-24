@@ -23,6 +23,7 @@ task copySources(type: Copy) {
     into 'ews-android-api/src/main/java'
 
     def repackageMap = [
+            'import com.sun.org.apache.xerces.internal.impl' : 'import com.sun.xml.stream',
             'org.apache.commons':'android.org.apache.commons',
             'org.apache.http':'android.org.apache.http',
             'NamingEnumeration<?>':'NamingEnumeration',
